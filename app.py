@@ -80,7 +80,7 @@ def makerr3():
         par = {
          'key':'761ea2d5575581057a799d14e9c78e28',
          'image':image_64_encode,
-         'name':'support zahirr',
+         'name':'Nulis buku by viko',
          'expiration': 60
          }
         headers = {
