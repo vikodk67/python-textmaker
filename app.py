@@ -53,7 +53,7 @@ def makerr2():
         par = {
          'key':'761ea2d5575581057a799d14e9c78e28',
          'image':image_64_encode,
-         'name':'support zahirr',
+         'name':'maker by viko',
          'expiration': 60
          }
         headers = {
