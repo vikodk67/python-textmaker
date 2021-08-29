@@ -8,12 +8,12 @@ class tulis:
         self.text = listOrText
         self.output = []
     def tulis(self):
-        img, font, kata, tempkata=Image.open("lib/textmaker/pemandangan.jpg"), ImageFont.truetype("lib/textmaker/font.ttf",55),'',''
+        img, font, kata, tempkata=Image.open("lib/textmaker/pemandangan.jpg"), ImageFont.truetype("lib/textmaker/font.otf",55),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
             self.output=[]
             for i in self.text:
-                if draw.textsize(tempkata, font)[0] < 850:
+                if draw.textsize(tempkata, font)[0] < 800:
                     tempkata+=i
                 else:
                     kata, tempkata=kata+'%s\n'%tempkata, i
