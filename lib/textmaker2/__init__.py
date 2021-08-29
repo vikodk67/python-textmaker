@@ -24,11 +24,11 @@ class tulis:
             spliter=self.text
         line=115
         for i in spliter[:56]:
-            draw.text((70, int(line)), i, font=font, fill=("white")) #selisih = Line
-            line+=40 + 19
+            draw.text((50, int(line)), i, font=font, fill=("white")) #selisih = Line
+            line+=30 + 19
         self.output.append(img)
-        if len(spliter) > 56:
-            self.output+=tulis(spliter[56:]).tulis()
+        if len(spliter) > 80:
+            self.output+=tulis(spliter[80:]).tulis()
         return self.output
     def __repr__(self):
         return "<length: %s char>"%len(self.text)
