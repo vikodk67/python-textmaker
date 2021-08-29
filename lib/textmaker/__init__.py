@@ -22,10 +22,10 @@ class tulis:
             spliter=kata.split("\n")
         else:
             spliter=self.text
-        line=115
+        line=113
         for i in spliter[:56]:
             draw.text((40, int(line)), i, font=font, fill=("white")) #selisih = Line
-            line+=30 + 5
+            line+=84 + 4.0
         self.output.append(img)
         if len(spliter) > 56:
             self.output+=tulis(spliter[56:]).tulis()
