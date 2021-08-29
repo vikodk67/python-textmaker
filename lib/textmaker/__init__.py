@@ -27,8 +27,8 @@ class tulis:
             draw.text((40, int(line)), i, font=font, fill=("white")) #selisih = Line
             line+=66 + 4.0
         self.output.append(img)
-        if len(spliter) > 66:
-            self.output+=tulis(spliter[66:]).tulis()
+        if len(spliter) > 20:
+            self.output+=tulis(spliter[20:]).tulis()
         return self.output
     def __repr__(self):
         return "<length: %s char>"%len(self.text)
