@@ -13,7 +13,7 @@ class tulis:
         if type(self.text) is not list:
             self.output=[]
             for i in self.text:
-                if draw.textsize(tempkata, font)[0] < 940:
+                if draw.textsize(tempkata, font)[0] < 980:
                     tempkata+=i
                 else:
                     kata, tempkata=kata+'%s\n'%tempkata, i
