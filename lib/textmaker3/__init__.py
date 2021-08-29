@@ -24,8 +24,8 @@ class tulis:
             spliter=self.text
         line=300
         for i in spliter[:56]:
-            draw.text((200, int(line)), i, font=font, fill=("black")) #selisih = Line
-            line+=42 + 2
+            draw.text((250, int(line)), i, font=font, fill=("black")) #selisih = Line
+            line+=46 + 2
         self.output.append(img)
         if len(spliter) > 56:
             self.output+=tulis(spliter[56:]).tulis()
