@@ -13,7 +13,7 @@ class tulis:
         if type(self.text) is not list:
             self.output=[]
             for i in self.text:
-                if draw.textsize(tempkata, font)[0] < 1020:
+                if draw.textsize(tempkata, font)[0] < 1070:
                     tempkata+=i
                 else:
                     kata, tempkata=kata+'%s\n'%tempkata, i
@@ -25,7 +25,7 @@ class tulis:
         line=290
         for i in spliter[:56]:
             draw.text((280, int(line)), i, font=font, fill=("black")) #selisih = Line
-            line+=47 + 9
+            line+=48 + 9
         self.output.append(img)
         if len(spliter) > 56:
             self.output+=tulis(spliter[56:]).tulis()
