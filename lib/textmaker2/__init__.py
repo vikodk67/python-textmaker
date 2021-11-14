@@ -9,7 +9,7 @@ class tulis:
         self.text = listOrText
         self.output = []
     def tulis(self):
-        gambaran = random.choice(['lib/textmaker2/gambar.jpg', 'lib/textmaker2/gambar2.jpg', 'lib/textmaker2/gambar3.jpg', 'lib/textmaker2/gambar4.jpg',])
+        gambaran = random.choice(['lib/textmaker2/gambar.jpg', 'lib/textmaker2/gambar2.jpg', 'lib/textmaker2/gambar3.jpg', 'lib/textmaker2/gambar4.jpg', 'lib/textmaker2/gambar5.jpg',])
         img, font, kata, tempkata=Image.open(gambaran), ImageFont.truetype("lib/textmaker2/Quote.ttf",22),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
