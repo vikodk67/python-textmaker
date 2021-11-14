@@ -10,7 +10,7 @@ class tulis:
         self.output = []
     def tulis(self):
         gambaran = random.choice(['lib/textmaker2/gambar.jpg', 'lib/textmaker2/gambar2.jpg', 'lib/textmaker2/gambar3.jpg', 'lib/textmaker2/gambar4.jpg',])
-        img, font, kata, tempkata=Image.open(gambaran), ImageFont.truetype("lib/textmaker2/Lato-Black.ttf",25),'',''
+        img, font, kata, tempkata=Image.open(gambaran), ImageFont.truetype("lib/textmaker2/KeepCalm-Medium.ttf",25),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
             self.output=[]
