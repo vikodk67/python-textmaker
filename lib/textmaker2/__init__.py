@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 from numpy import random
-gambaran = random.choice(['lib/textmaker2/gambar.jpg', 'lib/textmaker2/gambar2.jpg'])
+gambaran = random.choice(['lib/textmaker2/gambar.jpg', 'lib/textmaker2/gambar2.jpg', 'lib/textmaker2/gambar3.jpg', 'lib/textmaker2/gambar4.jpg',])
 class tulis:
     """
     listOrText : String
