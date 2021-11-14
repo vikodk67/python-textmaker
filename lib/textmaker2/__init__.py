@@ -1,5 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
-
+from numpy import random
+gambaran = random.choice(['https://telegra.ph/file/024f22c95447d45379f91.jpg', 'https://telegra.ph/file/5f8b1aa191e16c59c70a6.jpg'])
 class tulis:
     """
     listOrText : String
@@ -8,7 +9,7 @@ class tulis:
         self.text = listOrText
         self.output = []
     def tulis(self):
-        img, font, kata, tempkata=Image.open("lib/textmaker2/gambar.jpg"), ImageFont.truetype("lib/textmaker2/Lato-Black.ttf",25),'',''
+        img, font, kata, tempkata=Image.open(gambaran), ImageFont.truetype("lib/textmaker2/Lato-Black.ttf",25),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
             self.output=[]
