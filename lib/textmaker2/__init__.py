@@ -24,9 +24,9 @@ class tulis:
             spliter=kata.split("\n")
         else:
             spliter=self.text
-        line=330
+        line=270
         for i in spliter[:56]:
-            draw.text((50, int(line)), i, font=font, fill=("white")) #selisih = Line
+            draw.text((30, int(line)), i, font=font, fill=("white")) #selisih = Line
             line+=17 + 19
         self.output.append(img)
         if len(spliter) > 80:
