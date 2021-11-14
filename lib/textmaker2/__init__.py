@@ -10,7 +10,7 @@ class tulis:
         self.output = []
     def tulis(self):
         gambaran = random.choice(['lib/textmaker2/gambar.jpg', 'lib/textmaker2/gambar2.jpg', 'lib/textmaker2/gambar3.jpg', 'lib/textmaker2/gambar4.jpg',])
-        img, font, kata, tempkata=Image.open(gambaran), ImageFont.truetype("lib/textmaker2/Quote.ttf",20),'',''
+        img, font, kata, tempkata=Image.open(gambaran), ImageFont.truetype("lib/textmaker2/Quote.ttf",22),'',''
         draw=ImageDraw.Draw(img)
         if type(self.text) is not list:
             self.output=[]
@@ -27,7 +27,7 @@ class tulis:
         line=270
         for i in spliter[:56]:
             draw.text((30, int(line)), i, font=font, fill=("white")) #selisih = Line
-            line+=21 + 21
+            line+=21 + 30
         self.output.append(img)
         if len(spliter) > 80:
             self.output+=tulis(spliter[80:]).tulis()
