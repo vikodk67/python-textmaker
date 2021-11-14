@@ -2,6 +2,7 @@ from flask import Flask, request
 import requests
 from bs4 import BeautifulSoup as bs
 import json, base64
+from numpy import random
 
 app = Flask(__name__)
 
