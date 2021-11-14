@@ -29,7 +29,7 @@ class tulis:
             draw.text((30, int(line)), i, font=font, fill=("white")) #selisih = Line
             line+=18 + 22
         self.output.append(img)
-        if len(spliter) > 80:
+        if len(spliter) > 40:
             self.output+=tulis(spliter[80:]).tulis()
         return self.output
     def __repr__(self):
