@@ -8,9 +8,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    a = {
-    'result':{'result': 'Nomor wa.me/6281515958390', 'text3d': 'api/text3d?text=halo', 'textmaker1': 'api/textmaker?text=halo', 'textmaker2': 'api/textmaker2?text=halo', 'textmaker3': 'api/textmaker3?text=halo', 'textmaker4': 'api/textmaker4?text=halo'}
-    }
+    a = { 'result': 'Nomor wa.me/6281515958390', 'text3d': 'api/text3d?text=halo', 'textmaker1': 'api/textmaker?text=halo', 'textmaker2': 'api/textmaker2?text=halo', 'textmaker3': 'api/textmaker3?text=halo', 'textmaker4': 'api/textmaker4?text=halo'}
+    
     return a
 
 @app.route('/api/textmaker', methods=['GET'])
